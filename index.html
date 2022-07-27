@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width,
+    initial-scale=1">
+    <meta name="description" content="">
+    <title>My Portfolio</title>
+    <link rel="icon" type="images/my_portfolio_favicon2" href="images/my_portfolio_favicon2.png">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icon Css -->
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+     <!-- Animate CSS -->
+     <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- Stlesheet section-->
+    <style>
+      /* stylesheet code for hero*/
+        .hero {
+            width:100%; height:890px;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/windows-JW-T2BH5k5E-unsplash.jpg');
+            background-repeat: no-repeat; background-position:center; background-size: cover; position: relative;
+        }
+        /* stylesheet code for hero portrait */
+        .hero .intro .portrait-large {
+          background-image: url('images/my_profile2.jpeg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 2px ;
+          height: 200px;
+          width: 200px;
+          border: 5px solid black ;
+          border-radius: 100%;
+          margin:0 auto;
+          
+        }
+        /* stylesheet code for hero navbar */
+        .navbar-nav {
+          position: relative;
+          background-color: transparent;
+        }
+
+        .navbar-brand {
+            padding-left: 90px;
+          }
+
+
+        .nav-link {
+            color: white !important;
+        }
+
+        .nav-link:hover {
+          color: coral !important;
+        }
+        /* stylesheet code for hero header text*/
+        h1 {
+          color:transparent;
+          text-align: center;
+          font-weight: bold;
+          padding-top: 25px;
+          font-size: 70px;
+          -webkit-text-stroke: 1px coral;
+          background: url('images/back.png');
+          -webkit-background-clip: text;
+          background-position: 0 0;
+          animation: back 5s linear infinite;
+        }
+        @keyframes back {
+          100%{
+            background-position: 100px 0;
+          }
+        }
+        /* stylesheet code for hero sub-header */
+        h3 {
+         text-align: center;
+         color: white;
+         font-size: 25px ;
+         font-weight: bold;
+         text-transform: uppercase;
+         padding-top: 20px;
+        }
+        h3 span {
+          color: coral;
+        }
+        /* stylesheet code for hero bouncing arrow */
+        .bounce-arrow {
+          color: white;
+          text-align: center;
+          font-size: 20px;
+        }
+
+        .bounce-arrow>span {
+          font-size: 48px;
+          color: white;
+          display:inline-block;
+          width: 100%;
+          margin-top: 50px;
+          animation: bounce 2s ease infinite;
+        }
+
+        @keyframes bounce {
+          0%, 25%, 55%, 75%, 100%{
+            transform: translateY(0);
+          }
+          45%{
+            transform:translateY(-20px);
+          }
+          65%{
+            transform: translateY(-10px); 
+          }
+          85%{
+            transform: translateY(-5px);
+          }
+        }
+        /* stylesheet code for hero buttons*/
+        .row-1 {
+          display:flex;
+         align-items: center;
+          flex-wrap: wrap;
+          margin-top: 170px;
+          padding-left: 400px;
+          cursor: pointer;
+          text-transform: uppercase;
+        }
+
+        .row-1 a {
+          border-radius: 9px;
+          padding: 10px 20px;
+          margin-right: 20px;
+          text-decoration: none;
+          color: white;
+          border: 2px solid coral;
+        }
+        .row-1 a:hover {
+         background: coral;
+         transition: all 0.2s ease ;
+        }
+
+        .row-1 a:hover::before {
+          height: 100%;
+          width: 0%;
+          top: 0;
+          left: 50%;
+          -webkit-transform: translateX(-50%) skew(30deg);
+          transform: translateX(-50%) skew(30deg);
+          -webkit-transition: all ease 0.2s;
+          transition: all ease 0.2s;
+          z-index: -1;
+        }
+        /* stylesheet code for about me section*/
+        h4 {
+          text-align: center;
+          padding-top: 100px;
+          position: relative;
+          text-transform: uppercase;
+        }
+        h4::before {
+          content: " ";
+          position: absolute;
+          display: block;
+          left: 46%;
+          bottom: -9px;
+          width: 7%;
+          height: 2px;
+          background-color: coral;
+
+        }
+        
+        h2 {
+          text-transform: uppercase;
+          font-size: 50px;
+        }
+
+        h6 {
+          font-size: 20px;
+          color: coral;
+          padding-top: 10px;
+        }
+
+        p {
+          font-size: 20px;
+          padding-top: 10px;
+          font-family: 'Barlow', sans-serif;
+        }
+        /* stylesheet code for about me image*/
+        .profile-img {
+          margin-top: -685px;
+          height: 600px;
+          width: 520px;
+          padding-left: 99px;
+          position: relative;
+          z-index: 2;
+          transition: transform 0.5s;
+        }
+        .profile-img:hover {
+          transform:translate(65px, 65px) ;
+          cursor: pointer;
+        }
+        .back-img {
+          position: relative;
+          width: 405px;
+          height: 590px;
+          margin-left: 140px;
+        }
+        /* stylesheet code for about me buttons*/
+        .btn  {
+          margin-top: 10px;
+          border: solid black;
+        }
+
+        .btn:hover {
+          background: black;
+         transition: all 0.2s ease ;
+        }
+
+        .btn:hover::before {
+          color:coral;
+          -webkit-transform: translateX(-50%) skew(30deg);
+          transform: translateX(-50%) skew(30deg);
+          -webkit-transition: all ease 0.2s;
+          transition: all ease 0.2s;
+          z-index: -1;
+        }
+
+        /* stylesheet code for Services */
+        .services {
+          background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/background.png');
+          background-repeat: no-repeat; background-position: center; background-size: cover;
+          background-color:darkslategray;
+          height: auto;
+        }
+
+        .services::before {
+          background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7));
+        }
+        /* stylesheet code for service small header */
+        .display-5 {
+          font-size: 17px;
+          color: coral;
+          margin-left: 634px;
+          margin-bottom: -10px;
+          text-transform: uppercase;
+          margin-top: 50px;
+          font-weight: bold;
+          
+        }
+        /* stylesheet code for service big header */
+        h5 {
+          text-align: center;
+          padding-top: 0;
+          font-weight: bold;
+          font-size: 35px;
+          text-transform: uppercase;
+          position: relative;
+        }
+
+        h5::before {
+          content: " ";
+          position: absolute;
+          display: block;
+          left: 46%;
+          bottom: -9px;
+          width: 7%;
+          height: 2px;
+          background-color: coral;
+        }
+        /* stylesheet code for service row */
+        .row-2 {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: fit-content;
+          flex-wrap: wrap;
+          z-index: 1;
+        }
+
+        /* stylesheet code for service card */
+        .row-2 .card {
+          position: relative;
+          background-color: transparent;
+          width: 357px;
+          height: 550px;
+          margin: 30px;
+          box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+          border-radius: 15px;
+          background: rgba(255, 255, 255, 0.1);
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-top: 1px solid rgba(255, 255, 255, 0.5);
+          border-left: 1px solid rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(5px);
+          margin-left: 80px;
+        }
+        
+        /* stylesheet code for service card-images */
+        .row-2 .card img {
+          margin-top: 50px;
+          background-color: transparent;
+          font-size: 70px;
+          color: transparent;
+          height: 80px;
+          width: 130px;
+        }
+        
+        /* stylesheet code for service card content */
+        .row-2 .card .content {
+          padding: 20px;
+          text-align: center;
+          transition: 0.5s;
+          color: grey;
+          margin-top: -20px;
+        }
+
+        .row-2 .card .content p {
+          position: relative;
+          top: 2px;
+          right: 2px;
+          pointer-events: none;
+        }
+        
+        /* stylesheet code for service card button */ 
+       .row-2 .card .content a {
+        position: relative;
+        display: inline-block;
+        padding: 8px 20px;
+        margin-top: 15px;
+        background: white;
+        color: black;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 500;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        text-transform: uppercase;
+        animation: pulse 2s ease infinite;
+       } 
+
+       .row-2 .card .content a :hover {
+        transition: all ease 0.3s;
+        color: coral;
+       }
+
+       /* stylesheet code for my-portfolio section */
+       #portfolio {
+        height: auto;
+        background-color:whitesmoke;
+       }
+
+       .row-3 {
+         position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          flex-wrap: wrap;
+          z-index: 1;
+       }
+          #portfolio .title h5 {
+          text-align: center;
+          padding-top: 0;
+          font-weight: bold;
+          font-size: 35px;
+          text-transform: uppercase;
+          position: relative;
+        }
+
+       #portfolio .title h5::before {
+          content: " ";
+          position: absolute;
+          display: block;
+          left: 46%;
+          bottom: 34px;
+          width: 7%;
+          height: 2px;
+          background-color: coral;
+        }
+        
+       /* stylesheet code for card on portfolio section */
+       .row-3 .card-1 {
+        width: 450px;
+        height: 390px;
+        position: relative;
+        background-color: transparent;
+        margin: 30px;
+        box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+        background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), coral;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+        margin-left: 10px;
+        margin-top: 100px;
+        
+        transition: 0.5s ease-in-out;
+       }
+       .row-3 .card-1:hover {
+        height: 580px;
+        transition: 0.5s ease-in-out;
+       }
+
+       /* stylesheet code for card image on portfolio section */
+       .row-3 .card-1 .imgBx img {
+        margin-bottom: -1000;
+        position: relative;
+        width: 340px;
+        height: 350px;
+        margin-left: -0px;
+        margin-top: -200px;
+        overflow: hidden;
+       }
+
+       /* stylesheet code for card header on portfolio section */
+       .row-3 .card-1 .imgBx span {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+       }
+
+       /* stylesheet code for card progressbar on portfolio section */
+       .row-3 .card-1 .progress-wrap {
+        margin-top: 300px;
+        margin-left: -330px;
+        overflow: hidden;
+       }
+
+       .row-3 .card-1 .progress-wrap-1 {
+        margin-top: 360px;
+        margin-left: -344px;
+        overflow: hidden;
+        visibility: hidden;
+       }
+       .row-3 .card-1:hover .progress-wrap-1 {
+        visibility: visible;
+        transition: 0.5s ease-in-out;
+       }
+
+       .row-3 .card-1 .progress-wrap-2 {
+        margin-top: 390px;
+        margin-left: -344px;
+        overflow: hidden;
+        visibility:hidden ;
+       }
+       .row-3 .card-1:hover .progress-wrap-2 {
+        visibility: visible;
+        transition: 0.5s ease-in-out;
+       }
+
+       .row-3 .card-1 .progress-wrap-3 {
+        margin-top: 390px;
+        margin-left: -344px;
+        overflow: hidden;
+        visibility:hidden ;
+       }
+       .row-3 .card-1:hover .progress-wrap-3 {
+        visibility: visible;
+        transition: 0.5s ease-in-out;
+       }
+
+       /* stylesheet code for progressbar card content on portfolio section */
+       .row-3 .card-1 .content {
+        position: relative;
+        overflow: hidden;
+        visibility: hidden;
+        text-transform: uppercase;
+        font-weight: 70px;
+       }
+
+       .row-3 .card-1 .content .text-2 {
+        float: left;
+       }
+
+       .row-3 .card-1 .content .text-2 {
+        float: right;
+       }
+
+       .row-3 .card-1:hover .content {
+        visibility: visible;
+        transition: 0.5s ease-in-out;
+       }
+
+       /*stylesheet code for contact section */
+       #contact {
+        height: 940px;
+        margin-top: 0px;
+        background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/windows-JW-T2BH5k5E-unsplash.jpg');
+        background-repeat: no-repeat; background-position: center; background-size: cover;
+       } 
+
+       #contact .title h5 {
+          text-align: center;
+          padding-top: 0;
+          font-weight: bold;
+          font-size: 35px;
+          text-transform: uppercase;
+          position: relative;
+          color:rgba(255, 255, 255, 0.3);
+        }
+
+       #contact .title h5::before {
+          content: " ";
+          position: absolute;
+          display: block;
+          left: 46%;
+          bottom: 34px;
+          width: 7%;
+          height: 2px;
+          background-color: coral;
+        }
+
+       .form-box {
+        width: 700px;
+        height: 480px;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+        margin-left: 400px;
+        margin-top: 35px;
+       }
+       .form-box form {
+        width: 600px;
+        margin-top: 30px;
+        margin-left: 34px;
+       }
+
+       #contact-btn {
+        background-color: wheat;
+        border: solid wheat;
+        width: 100px;
+       }
+       #contact-btn:hover {
+        background: coral;
+       }
+
+       .icon a {
+        color: coral;
+        font-size: 30px;
+       }
+       p .details {
+        color: coral;
+       }
+
+       .social-icons {
+        font-size:50px;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 60px;
+       }
+  
+       .social-icons .bi-facebook {
+        margin: 30px;
+        background:transparent;
+        color: coral;
+       }
+       .social-icons .bi-facebook:hover {
+        color:lightgray !important;
+       }
+       .social-icons .bi-telegram {
+        margin: 30px;
+        color: coral;
+       }
+       .social-icons .bi-telegram:hover {
+        color:lightgray !important;
+       }
+       .social-icons .bi-whatsapp {
+        margin: 30px;
+        color: coral;
+       }
+       .social-icons .bi-whatsapp:hover {
+        color:lightgray !important;
+       }
+       .social-icons .bi-github {
+        margin: 30px;
+        color: coral;
+       }
+       .social-icons .bi-github:hover {
+        color:lightgray !important;
+       }
+       .social-icons .bi-instagram {
+        margin: 30px;
+        color: coral;
+       }
+       .social-icons .bi-instagram:hover {
+        color:lightgray !important;
+       }
+
+       /* stylesheet code for device screen width ranging form 1-1000 */
+       @media only screen and (max-device-width:1000px) {
+       .hero {
+        width: 100%;
+        height: auto;
+       }
+       
+       .navbar-collapse {
+        width: 100%;
+        background:dimgray;
+       }
+        .row-1 {
+          margin-top: 50px;
+          padding-left: 90px;
+        }
+        p {
+          text-decoration: none;
+          word-spacing: normal;
+          font-style: normal;
+        }
+        .profile-img {
+          height: 600px;
+          width: 345px;
+          padding-left: 20px;
+        }
+        .back-img {
+          position: relative;
+          width: 325px;
+          height: 590px;
+          margin-left: 40px;
+        }
+        .display-5 {
+          margin-left: 334px;
+        }
+        .services {
+          height: auto;
+        }
+        #portfolio {
+          height: 2050px;
+        }
+        .row-3 card-1 {
+          margin: 50px;
+        }
+        #contact {
+          height: 990px;
+        }
+        .form-box {
+          margin-left: 100px;
+        }
+       }
+    </style>
+  </head>
+  <body>
+    <section class="hero hero-1">
+         <!----- Navbar Section Starts Here ----->   
+     <nav class="navbar navbar-expand-lg navbar-dark text-white">
+        
+          <a class="navbar-brand" href="#home">
+            <img src="images/Untitled.png" alt="logo" width="100%" height="100">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white ms-5" aria-current="page" href="#home">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white  ms-5" href="#about-me">ABOUT</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-white ms-5" href="#services">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white  ms-5" href="#portfolio">PORTFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white ms-5" href="#contact">CONTACT</a>
+              </li>
+             
+            </ul>
+          </div>
+      </nav>
+      <!----- Home page starts here ----->
+      <div class="container p-5">
+        <div class="row">
+          <div class="col-md-12 my-auto">
+            <div class="intro">
+
+              <!--Profile img code -->
+              <div class="portrait-large animate__animated animate__fadeInDown animate__fadeInUp"
+              style="opacity: 0;"></div>
+              
+              <!-- Text-header code -->
+              <h1 class="animate__animated">OSIKWEMHE FAVOUR</h1>
+              <h3> I'm a <span class="auto-type"></span></h3>
+            </div>
+          </div>
+          <!-- button link code hero section -->
+          <div class="row-1 row-s-1 animate__animated mx-auto">
+            <a href="#portfolio">Explore My Portfolio</a>
+            <a href="#contact">Connect With Me</a>
+          </div>
+        </div>
+
+      
+        <!---- Bouncing Arrow code ---->
+        <a href="#about-me" class="bounce-arrow">
+          <span><i class="bi bi-chevron-compact-down"></i></span>
+        </a>
+      </div>
+    </section>
+
+    <!----- About Me Page ----->
+    <section id="about-me" class="active">
+      <div class="inner">
+        <div class="container-fluid bg-light px-5 py-5 mx-auto">
+          <h4 class="display-6 fw-bold">About Me</h4>
+          <div class="row p-5">
+            <div class="col-md-7">
+              <h2>Hi! <span>I'm Favour</span></h2>
+              <h6>I'm a Webdesigner, a graphics designer,<br>
+                 a microsoft Office Specialist and a model
+              </h6>
+              <p>
+                My name is Favour Osikwemhe and I'm Studying at Federal University of Technology, Owerri.
+                I Major in Mechatronics Engineering and I'm currently in my third year of study.
+                I'm a Web developer/designer, a Microsoft office specialist, a Model,
+                a Graphics designer and Tech Researcher fascinated by the Tech Industries and Artificial Intelligence.
+              </p>
+              <p>
+                Nothing brings me more pleasure than making something out of
+                nothing, the concept of creativity, that is what it means to be web designer/developer.
+                The challenge of creating something unique and mind blowing for my clients creates situations that
+                further build my knowledge and repution as such I always look towards creating and designing sites
+                that gives an impression and experience you can't get else where.
+              </p>
+              <!-- button link code for about me section -->
+              <a href="#services" class="btn mx-auto">know what you want</a>
+              <a href="#contact" class="btn mx-auto">Connect With Me</a>
+             
+            </div>
+            <!-- image code for about me section -->
+            <div class="col-md-5">
+              <img src="images/back-image.png" class="back-img">
+              <img src="images/me_edited.jpeg" class="profile-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Service page -->
+    <section id="services" class="services">
+      <div class="inner">
+        <div class="container-fluid px-5 py-5">
+          <div class="Title">
+            <p class="display-5 px-auto">What I do</p>
+            <h5>My services</h5>
+          </div>
+          <!-- Cards section for my service page-->
+          <div class="row-2">
+            <div class="card">
+              <img src="images/vector_web_design_1.png">
+              <div class="content">
+                <p>Web developing</p>
+                <p>
+                  I provide end-to-end services related to website
+                   developement.From design to developementand then 
+                   SEO for the site. I first analyze client's business
+                   requirements and then provide dependable solutions.
+                </p>
+                <a href="#contact" class="animate__animated animate__pulse">send a message</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/vector_graphics_design_1.png">
+              <div class="content">
+                <p>Graphic designing</p>
+                <p>
+                  I am specialized in offering a wide range of creative conversions.
+                  I can help you with artwork, graphic design, illustrations, prepress,
+                  website design, animation, video editing, banner designing, and more! 
+                </p>
+                <a href="#contact" class="animate__animated animate__pulse">send a message</a>
+              </div>
+            </div>
+            <div class="card">
+             <img src="images/vector_modeling.png">
+              <div class="content">
+                <p>Modeling</p>
+                <p>
+                  Working with consumer brands,fashion designers, photographers
+                  and artists to advertise a wide array of products.
+                  Being able to make any product sell well or stand out in the
+                  market is the work of a model.
+                </p>
+                <a href="#contact" class="animate__animated animate__pulse">send a message</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- Portfolio Section starts here -->
+   <section class="active" id="portfolio">
+    <div class="inner">
+      <div class="container-fluid px-5 py-5">
+        <div class="title">
+          <h5 class="p-5">portfolio</h5>
+        </div>
+        <!-- code for images and progressbar on portfolio card section -->
+        <div class="row-3 py-5 my-5">
+          <div class="card-1">
+            <div class="imgBx">
+              <img src="images/christopher-gower-m_HRfLhgABo-unsplash.jpg"><br><br>
+              <span>Web developer</span>
+            </div>
+            <div class="progress-wrap-1">
+              <div class="content">
+                <span class="text-1">HTML</span>
+                <span class="text-2">80%</span>
+              </div>
+              <div class="progress" style="height:5px ; width: 340px;">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:80%"></div>
+              </div><br><br><br>
+            </div>
+            <div class="progress-wrap-2"><br><br><br>
+              <div class="content">
+                <span class="text-1">CSS</span>
+                <span class="text-2">70%</span>
+              </div>
+              <div class="progress" style="height:5px ; width: 340px;">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:70%"></div>
+              </div><br><br><br>
+            </div>
+            <div class="progress-wrap-3"><br><br><br>
+              <div class="content">
+                <span class="text-1">JavaScript</span>
+                <span class="text-2">57%</span>
+              </div>
+              <div class="progress" style="height:5px ; width: 340px;">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:57%"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card-1">
+            <div class="imgBx">
+              <img src="images/onur-binay-wi3xBnWZlvQ-unsplash.jpg"><br><br>
+              <span>Graphic designer</span>
+            </div>
+            <div class="progress-wrap-1">
+              <div class="content">
+                <span class="text-1">Creativity</span>
+                <span class="text-2">70%</span>
+              </div>
+              <div class="progress" style="height:5px ; width: 340px;">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:70%"></div>
+              </div><br><br><br>
+            </div>
+            <div class="progress-wrap-2"><br><br><br>
+              <div class="content">
+                <span class="text-1">Ideation</span>
+                <span class="text-2">70%</span>
+              </div>
+              <div class="progress" style="height:5px ; width: 340px;">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:70%"></div>
+              </div><br><br><br>
+            </div>
+            <div class="progress-wrap-3"><br><br><br>
+              <div class="content">
+                <span class="text-1">Technology</span>
+                <span class="text-2">70%</span>
+              </div>
+              <div class="progress" style="height:5px ; width: 340px;">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:70%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-1">
+            <div class="imgBx">
+              <img src="images/timothy-dykes-qxbbDCnCEmo-unsplash.jpg"><br><br>
+              <span class="fw-bold">Model</span>
+            </div>
+            <div class="progress-wrap-1">
+              <div class="content">
+                <span class="text-1">Confidence</span>
+                <span class="text-2">70%</span>
+              </div>
+              <div class="progress" style="height:5px; width: 340px;">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:70%"></div>
+              </div><br><br><br>
+            </div>
+            <div class="progress-wrap-2"><br><br><br>
+              <div class="content">
+                <span class="text-1">Pose</span>
+                <span class="text-2">67%</span>
+              </div>
+              <div class="progress" style="height:5px; width: 340px;">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:67%"></div>
+              </div><br><br><br>
+            </div>
+            <div class="progress-wrap-3"><br><br><br>
+              <div class="content">
+                <span class="text-1">Portfolio</span>
+                <span class="text-2">59%</span>
+              </div>
+              <div class="progress" style="height:5px ; width: 340px;">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:59%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <!----- Contact and Icon section starts here ----->
+   <section class="contact" id="contact">
+     <div class="inner">
+       <div class="container-fluid px-5 py-5">
+          <div class="title">
+            <h5 class="p-5" id="contact-text">Contact</h5>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 text-center text-white">
+              <div class="icon">
+               <a href="mailto:osikwemhefavour@gmail.com"><i class="bi bi-envelope"></i></a>
+              </div>
+              <span>Email:</span>
+              <p class="details">Osikwemhefavour@gmail.com</p>
+            </div>
+            <div class="col-sm-4 text-center text-white">
+              <div class="icon">
+                <a href="tel:+2347036804916"><i class="bi bi-phone"></i></a>
+              </div>
+              <span>Phone:</span>
+              <p class="details">+2347036804916</p>
+            </div>
+            <div class="col-sm-4 text-center text-white">
+              <div class="icon">
+                <a href="https://maps.app.goo.gl/BT8ENJ6gDDD8SSHV8"><i class="bi bi-pin-map"></i></a>
+              </div>
+              <span>Address:</span>
+              <p class="details">Close 8 Elekahia housing estate</p>
+            </div>
+          </div>
+          <div class="form-box mx-auto">
+            <form action="/acton_page.php">
+              <div class="mb-3 text-white">
+                <label for="Fullname" class="form-label">Fullname:</label>
+                <input type="Fullname" class="form-control " id="Fullname" placeholder="Your Fullname" name="Fullname">
+              </div>
+              <div class="mb-3 mt-3 text-white">
+                <label for="Email" class="form-label"> Email:</label>
+                <input type="Email" class="form-control " id="Email" placeholder="Your Email" name="Email">
+              </div>
+              <div class="mb-3 text-white">
+                <label for="comment">Comments:</label>
+                <textarea class="form-control" rows="5" id="comment" 
+                placeholder="Tell us about your project and ideas on what you want." name="text"></textarea>
+              </div>
+              <button type="submit" class="btn" id="contact-btn">Submit</button>
+            </form>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/osikwemhe.andrew"><i class="bi bi-facebook"></i></a>
+              <a href="https://telegram.org/dl"><i class="bi bi-telegram"></i></a>
+             <a href="https://wa.me/2347036804916.com"> <i class="bi bi-whatsapp"></i></a>
+             <a href="https://github.io/andy9969"><i class="bi bi-github"></i></a>
+             <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+     </div>
+   </section>
+
+    <!-- JavaSript Bundle with popper-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Typed JavaScript -->
+    <script src="js/typed.js"></script>
+
+    <script>
+      var typed = new Typed(".auto-type", {
+      strings: ["Web designer", "Graphic designer", "Microsoft Office Specialist", "Model"],
+      typeSpeed: 150,
+      backSpeed: 100,
+      loop: true
+      });
+    </script>  
+
+    <!-- vanilla tilt javascript -->
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"),{
+		  max: 25,
+		  speed: 400,
+      glare: true,
+      "max-glare":1,
+	    });
+    </script>
+
+      
+
+  </body>
+</html>
